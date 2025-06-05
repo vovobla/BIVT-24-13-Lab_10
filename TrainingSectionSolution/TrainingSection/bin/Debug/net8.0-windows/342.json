@@ -1,0 +1,100 @@
+[
+  {
+    "Rating": 4.0,
+    "Groups": [
+      {
+        "Name": "Группа 1",
+        "Athletes": [
+          {
+            "FullName": "Васильев Игорь",
+            "Age": 20,
+            "Gender": 0
+          },
+          {
+            "FullName": "Кузнецова Анна",
+            "Age": 21,
+            "Gender": 1
+          },
+          {
+            "FullName": "Морозов Данила",
+            "Age": 18,
+            "Gender": 0
+          },
+          {
+            "FullName": "Попов Алексей",
+            "Age": 19,
+            "Gender": 0
+          }
+        ],
+        "SessionCount": 0
+      },
+      {
+        "Name": "Группа 2",
+        "Athletes": [
+          {
+            "FullName": "Попов Алексей",
+            "Age": 19,
+            "Gender": 0
+          }
+        ],
+        "SessionCount": 0
+      }
+    ],
+    "FullName": "Петров Петр",
+    "Age": 35,
+    "Gender": 0
+  },
+  {
+    "Rating": 0.0,
+    "Groups": [
+      {
+        "Name": "Группа 3",
+        "Athletes": [
+          {
+            "FullName": "Ковалёва Светлана",
+            "Age": 22,
+            "Gender": 1
+          }
+        ],
+        "SessionCount": 0
+      }
+    ],
+    "FullName": "Сидорова Мария",
+    "Age": 29,
+    "Gender": 1
+  },
+  {
+    "Rating": 0.0,
+    "Groups": [
+      {
+        "Name": "Группа 4",
+        "Athletes": [
+          {
+            "FullName": "Морозов Данила",
+            "Age": 18,
+            "Gender": 0
+          },
+          {
+            "FullName": "Кузнецова Анна",
+            "Age": 21,
+            "Gender": 1
+          },
+          {
+            "FullName": "Васильев Игорь",
+            "Age": 20,
+            "Gender": 0
+          }
+        ],
+        "SessionCount": 0
+      },
+      {
+        "Name": "Группа 5",
+        "Athletes": [],
+        "SessionCount": 0
+      }
+    ],
+    "FullName": "Иванов Иван",
+    "Age": 42,
+    "Gender": 0
+  }
+]

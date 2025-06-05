@@ -1,0 +1,30 @@
+{
+  "Name": "Группа 1",
+  "Trainer": {
+    "Rating": 0.0,
+    "Groups": [
+      {
+        "Name": "Группа 2",
+        "Athletes": [
+          {
+            "FullName": "Попов Алексей",
+            "Age": 19,
+            "Gender": 0
+          }
+        ],
+        "SessionCount": 0
+      }
+    ],
+    "FullName": "Петров Петр",
+    "Age": 35,
+    "Gender": 0
+  },
+  "Athletes": [
+    {
+      "FullName": "Кузнецова Анна",
+      "Age": 21,
+      "Gender": 1
+    }
+  ],
+  "SessionCount": 0
+}

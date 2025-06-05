@@ -1,0 +1,18 @@
+{
+  "Name": "Группа 3",
+  "Trainer": {
+    "Rating": 5.0,
+    "Groups": [],
+    "FullName": "Сидорова Мария",
+    "Age": 29,
+    "Gender": 1
+  },
+  "Athletes": [
+    {
+      "FullName": "Ковалёва Светлана",
+      "Age": 22,
+      "Gender": 1
+    }
+  ],
+  "SessionCount": 0
+}

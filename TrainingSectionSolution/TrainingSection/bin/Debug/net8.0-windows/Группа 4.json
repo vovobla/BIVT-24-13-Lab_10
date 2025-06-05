@@ -1,0 +1,24 @@
+{
+  "Name": "Группа 4",
+  "Trainer": {
+    "Rating": 4.75,
+    "Groups": [
+      {
+        "Name": "Группа 5",
+        "Athletes": [],
+        "SessionCount": 0
+      }
+    ],
+    "FullName": "Иванов Иван",
+    "Age": 42,
+    "Gender": 0
+  },
+  "Athletes": [
+    {
+      "FullName": "Морозов Данила",
+      "Age": 18,
+      "Gender": 0
+    }
+  ],
+  "SessionCount": 0
+}
