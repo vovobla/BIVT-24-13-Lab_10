@@ -33,42 +33,47 @@ namespace TrainingSection
             buttonBack.Paint += RoundPaint;
 
             buttonExport.Click += ButtonExport_Click;
-            buttonBack.Click += (s, args) => { this.Owner?.Show(); this.Close(); };
+            buttonBack.Click += (s, args) =>
+            {
+                this.Owner?.Show();
+                this.Close();
+            };
         }
 
         private void ButtonExport_Click(object sender, EventArgs e)
         {
-            var format = comboBoxFormat.SelectedItem?.ToString();
+            string format = comboBoxFormat.SelectedItem?.ToString();
             if (string.IsNullOrEmpty(format)) return;
 
-            AbstractSerializer newSerializer = format == "XML" ? new XmlSerializer() : new JsonSerializer();
-            string newExt = format.ToLower();
-            string oldExt = newExt == "json" ? "xml" : "json";
+            SaveFileDialog saveDialog = new SaveFileDialog();
+            saveDialog.Filter = format == "JSON"
+                ? "JSON файлы (*.json)|*.json"
+                : "XML файлы (*.xml)|*.xml";
+            saveDialog.Title = "Сохранить отчет";
 
-            foreach (var trainer in Program.Trainers)
+            if (saveDialog.ShowDialog() == DialogResult.OK)
             {
-                string oldFile = trainer.FullName + "." + oldExt;
-                string newFile = trainer.FullName + "." + newExt;
-
-                if (File.Exists(oldFile))
+                try
                 {
-                    var serializer = oldExt == "json" ? (AbstractSerializer)new JsonSerializer() : new XmlSerializer();
-                    try
+                    if (format == "JSON")
                     {
-                        var obj = serializer.Deserialize<Trainer>(oldFile);
-                        if (obj != null)
-                        {
-                            newSerializer.Serialize(newFile, obj);
-                        }
+                        var serializer = new JsonSerializer();
+                        serializer.Serialize(saveDialog.FileName, Program.Trainers);
                     }
-                    catch (Exception ex)
+                    else
                     {
-                        MessageBox.Show($"Ошибка при конвертации {oldFile}: {ex.Message}");
+                        var serializer = new XmlSerializer();
+                        var dtos = XmlSerializer.ConvertToDTO(Program.Trainers);
+                        serializer.Serialize(saveDialog.FileName, dtos);
                     }
+
+                    MessageBox.Show("Отчёт успешно сохранён!", "Успешно", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Ошибка при сохранении: {ex.Message}", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-
-            MessageBox.Show("Конвертация завершена.", "Успешно", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void StyleButton(Button button)

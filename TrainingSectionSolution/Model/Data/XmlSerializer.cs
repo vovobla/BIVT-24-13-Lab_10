@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
+using System.Xml.Serialization;
+using Model.Core;
 
 namespace Model.Data
 {
@@ -23,5 +22,51 @@ namespace Model.Data
             var serializer = new System.Xml.Serialization.XmlSerializer(typeof(T));
             return (T)serializer.Deserialize(fs);
         }
+
+        // --- Дополнительно: конвертация Trainer → TrainerDTO ---
+        public static List<TrainerDTO> ConvertToDTO(List<Trainer> trainers)
+        {
+            var list = new List<TrainerDTO>();
+            foreach (var t in trainers)
+            {
+                list.Add(new TrainerDTO
+                {
+                    FullName = t.FullName,
+                    Rating = t.Rating,
+                    Groups = t.Groups?.Select(g => new GroupDTO
+                    {
+                        Name = g.Name,
+                        Athletes = g.Athletes?.Select(a => new AthleteDTO
+                        {
+                            FullName = a.FullName,
+                            Age = a.Age,
+                            Gender = a.Gender == Gender.Male ? "Мужской" : "Женский"
+                        }).ToList()
+                    }).ToList()
+                });
+            }
+            return list;
+        }
+    }
+
+    // --- DTO-классы для сериализации ---
+    public class TrainerDTO
+    {
+        public string FullName { get; set; }
+        public double Rating { get; set; }
+        public List<GroupDTO> Groups { get; set; }
+    }
+
+    public class GroupDTO
+    {
+        public string Name { get; set; }
+        public List<AthleteDTO> Athletes { get; set; }
+    }
+
+    public class AthleteDTO
+    {
+        public string FullName { get; set; }
+        public int Age { get; set; }
+        public string Gender { get; set; } // "Мужской" / "Женский"
     }
 }
