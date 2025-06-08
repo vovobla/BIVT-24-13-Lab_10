@@ -21,6 +21,21 @@
   },
   "Athletes": [
     {
+      "FullName": "Васильев Игорь",
+      "Age": 20,
+      "Gender": 0
+    },
+    {
+      "FullName": "Попов Алексей",
+      "Age": 19,
+      "Gender": 0
+    },
+    {
+      "FullName": "Ковалёва Светлана",
+      "Age": 22,
+      "Gender": 1
+    },
+    {
       "FullName": "Кузнецова Анна",
       "Age": 21,
       "Gender": 1

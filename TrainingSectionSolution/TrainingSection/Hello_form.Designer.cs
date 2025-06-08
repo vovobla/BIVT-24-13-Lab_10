@@ -17,21 +17,29 @@
 
         private void InitializeComponent()
         {
-            this.labelWelcome = new System.Windows.Forms.Label();
+            this.panelHeader = new System.Windows.Forms.Panel();
+            this.labelTitle = new System.Windows.Forms.Label();
             this.buttonOpenGroupEditor = new System.Windows.Forms.Button();
             this.buttonOpenTrainerInfo = new System.Windows.Forms.Button();
             this.buttonOpenTrainerRatings = new System.Windows.Forms.Button();
             this.buttonOpenFilters = new System.Windows.Forms.Button();
+            this.panelHeader.SuspendLayout();
             this.SuspendLayout();
             // 
-            // labelWelcome
+            // panelHeader
             // 
-            this.labelWelcome.Location = new System.Drawing.Point(50, 20);
-            this.labelWelcome.Name = "labelWelcome";
-            this.labelWelcome.Size = new System.Drawing.Size(500, 60);
-            this.labelWelcome.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelWelcome.Text = "Добро пожаловать в сервис для сбора статистики\nэффективности работы тренеров";
-            this.labelWelcome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.panelHeader.BackColor = System.Drawing.Color.MidnightBlue;
+            this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelHeader.Height = 80;
+            this.panelHeader.Controls.Add(this.labelTitle);
+            // 
+            // labelTitle
+            // 
+            this.labelTitle.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelTitle.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelTitle.ForeColor = System.Drawing.Color.White;
+            this.labelTitle.Text = "Training Section";
+            this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // buttonOpenGroupEditor
             // 
@@ -39,7 +47,7 @@
             this.buttonOpenGroupEditor.Name = "buttonOpenGroupEditor";
             this.buttonOpenGroupEditor.Size = new System.Drawing.Size(250, 40);
             this.buttonOpenGroupEditor.TabIndex = 0;
-            this.buttonOpenGroupEditor.Text = "Редактирование групп";
+            this.buttonOpenGroupEditor.Text = "Группы";
             this.buttonOpenGroupEditor.UseVisualStyleBackColor = true;
             this.buttonOpenGroupEditor.Click += new System.EventHandler(this.buttonOpenGroupEditor_Click);
             // 
@@ -69,7 +77,7 @@
             this.buttonOpenFilters.Name = "buttonOpenFilters";
             this.buttonOpenFilters.Size = new System.Drawing.Size(250, 40);
             this.buttonOpenFilters.TabIndex = 3;
-            this.buttonOpenFilters.Text = "Фильтры";
+            this.buttonOpenFilters.Text = "Отчет по тренерам";
             this.buttonOpenFilters.UseVisualStyleBackColor = true;
             this.buttonOpenFilters.Click += new System.EventHandler(this.buttonOpenFilters_Click);
             // 
@@ -78,19 +86,22 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 400);
-            this.Controls.Add(this.labelWelcome);
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.Controls.Add(this.panelHeader);
             this.Controls.Add(this.buttonOpenGroupEditor);
             this.Controls.Add(this.buttonOpenTrainerInfo);
             this.Controls.Add(this.buttonOpenTrainerRatings);
             this.Controls.Add(this.buttonOpenFilters);
             this.Name = "Hello_form";
             this.Text = "TrainingSection";
+            this.panelHeader.ResumeLayout(false);
             this.ResumeLayout(false);
         }
 
         #endregion
 
-        private System.Windows.Forms.Label labelWelcome;
+        private System.Windows.Forms.Panel panelHeader;
+        private System.Windows.Forms.Label labelTitle;
         private System.Windows.Forms.Button buttonOpenGroupEditor;
         private System.Windows.Forms.Button buttonOpenTrainerInfo;
         private System.Windows.Forms.Button buttonOpenTrainerRatings;

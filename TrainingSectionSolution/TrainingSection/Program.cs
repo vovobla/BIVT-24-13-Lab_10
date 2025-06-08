@@ -9,7 +9,7 @@ namespace TrainingSection;
 static class Program
 {
     public static List<Trainer> Trainers = [];
-    public static List<Group> Groups = [];
+    public static List<Model.Core.Group> Groups = [];
     public static AbstractSerializer Serializer = new JsonSerializer();
     public static List<Athlete> AllAthletes = [];
 
@@ -28,11 +28,11 @@ static class Program
         var a5 = new Athlete("Морозов Данила", 18, Gender.Male);
         AllAthletes.AddRange([a1, a2, a3, a4, a5]);
 
-        var g1 = new Group("Группа 1", t1); g1.AddAthlete(a1); g1.AddAthlete(a2);
-        var g2 = new Group("Группа 2", t1); g2.AddAthlete(a3);
-        var g3 = new Group("Группа 3", t2); g3.AddAthlete(a4);
-        var g4 = new Group("Группа 4", t3); g4.AddAthlete(a5);
-        var g5 = new Group("Группа 5", t3);
+        var g1 = new Model.Core.Group("Группа 1", t1); g1.AddAthlete(a1); g1.AddAthlete(a2);
+        var g2 = new Model.Core.Group("Группа 2", t1); g2.AddAthlete(a3);
+        var g3 = new Model.Core.Group("Группа 3", t2); g3.AddAthlete(a4);
+        var g4 = new Model.Core.Group("Группа 4", t3); g4.AddAthlete(a5);
+        var g5 = new Model.Core.Group("Группа 5", t3);
 
         Groups.AddRange([g1, g2, g3, g4, g5]);
 
