@@ -1,7 +1,7 @@
 {
   "Name": "Группа 1",
   "Trainer": {
-    "Rating": 0.0,
+    "Rating": 4.0,
     "Groups": [
       {
         "Name": "Группа 2",
@@ -26,9 +26,14 @@
       "Gender": 0
     },
     {
-      "FullName": "Ковалёва Светлана",
-      "Age": 22,
+      "FullName": "Кузнецова Анна",
+      "Age": 21,
       "Gender": 1
+    },
+    {
+      "FullName": "Попов Алексей",
+      "Age": 19,
+      "Gender": 0
     }
   ],
   "SessionCount": 0

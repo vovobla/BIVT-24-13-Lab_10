@@ -55,11 +55,21 @@ namespace TrainingSection
             var athlete = comboBoxAthletes.SelectedItem as Athlete;
             if (athlete != null)
             {
-                comboBoxGroups.DataSource = Program.Groups;
-                comboBoxGroups.Enabled = true;
+                // Только те группы, в которых участвует спортсмен
+                var relevantGroups = Program.Groups
+                    .Where(g => g.Athletes.Contains(athlete))
+                    .ToList();
+
+                comboBoxGroups.DataSource = null;
+                comboBoxGroups.Enabled = relevantGroups.Any();
+                comboBoxGroups.DataSource = relevantGroups;
+                comboBoxGroups.DisplayMember = "Name";
+
+                buttonFeedback.Enabled = false;
             }
             else
             {
+                comboBoxGroups.DataSource = null;
                 comboBoxGroups.Enabled = false;
                 buttonFeedback.Enabled = false;
             }
