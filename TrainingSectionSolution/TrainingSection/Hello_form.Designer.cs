@@ -58,7 +58,7 @@
             this.buttonOpenTrainerInfo.Name = "buttonOpenTrainerInfo";
             this.buttonOpenTrainerInfo.Size = new System.Drawing.Size(250, 40);
             this.buttonOpenTrainerInfo.TabIndex = 1;
-            this.buttonOpenTrainerInfo.Text = "Тренеры и фидбек";
+            this.buttonOpenTrainerInfo.Text = "Тренеры";
             this.buttonOpenTrainerInfo.UseVisualStyleBackColor = true;
             this.buttonOpenTrainerInfo.Click += new System.EventHandler(this.buttonOpenTrainerInfo_Click);
             // 

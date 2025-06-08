@@ -14,6 +14,7 @@
         private System.Windows.Forms.Label labelAgeFilter;
         private System.Windows.Forms.Label labelMinAge;
         private System.Windows.Forms.Label labelMaxAge;
+        private System.Windows.Forms.Button buttonBack;
 
         protected override void Dispose(bool disposing)
         {
@@ -37,6 +38,7 @@
             labelMinAge = new Label();
             labelMaxAge = new Label();
             dataGridViewAthletes = new DataGridView();
+            buttonBack = new Button();
             ((System.ComponentModel.ISupportInitialize)numericUpDownMinAge).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDownMaxAge).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridViewAthletes).BeginInit();
@@ -133,6 +135,16 @@
             dataGridViewAthletes.Size = new Size(690, 300);
             dataGridViewAthletes.TabIndex = 10;
             // 
+            // buttonBack
+            // 
+            buttonBack.Location = new Point(600, 435);
+            buttonBack.Name = "buttonBack";
+            buttonBack.Size = new Size(120, 35);
+            buttonBack.TabIndex = 11;
+            buttonBack.Text = "Назад";
+            buttonBack.UseVisualStyleBackColor = true;
+            buttonBack.Click += ButtonBack_Click;
+            // 
             // Groups
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -149,6 +161,7 @@
             Controls.Add(labelMaxAge);
             Controls.Add(numericUpDownMaxAge);
             Controls.Add(dataGridViewAthletes);
+            Controls.Add(buttonBack);
             Name = "Groups";
             Text = "Управление группами";
             ((System.ComponentModel.ISupportInitialize)numericUpDownMinAge).EndInit();

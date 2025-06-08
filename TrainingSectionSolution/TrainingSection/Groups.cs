@@ -19,24 +19,22 @@ namespace TrainingSection
 
         private void Groups_Load(object sender, EventArgs e)
         {
+            // Заполнение групп и спортсменов
             comboBoxGroups.DataSource = Program.Groups;
             comboBoxGroups.DisplayMember = "Name";
             comboBoxGroups.SelectedIndexChanged += (s, e) => UpdateAthletes();
 
-            comboBoxAthletes.DataSource = Program.AllAthletes;
+            comboBoxAthletes.DataSource = Program.AllAthletes.ToList();
             comboBoxAthletes.DisplayMember = "FullName";
+            comboBoxAthletes.SelectedIndex = -1;
+            comboBoxAthletes.Text = "Спортсмен";
 
+            // Половой фильтр
             comboBoxGenderFilter.Items.AddRange(new string[] { "Все", "Мужчины", "Женщины" });
             comboBoxGenderFilter.SelectedIndex = 0;
             comboBoxGenderFilter.SelectedIndexChanged += (s, e) => ApplyFilters();
 
-            StyleButton(buttonAdd);
-            StyleButton(buttonRemove);
-            buttonAdd.Click += buttonAddAthlete_Click;
-            buttonRemove.Click += buttonRemoveAthlete_Click;
-            buttonAdd.Paint += RoundPaint;
-            buttonRemove.Paint += RoundPaint;
-
+            // Возрастной фильтр
             numericUpDownMinAge.Minimum = 0;
             numericUpDownMinAge.Maximum = 100;
             numericUpDownMaxAge.Minimum = 0;
@@ -45,12 +43,28 @@ namespace TrainingSection
             numericUpDownMinAge.ValueChanged += (s, e) => ApplyFilters();
             numericUpDownMaxAge.ValueChanged += (s, e) => ApplyFilters();
 
+            // Стилизация таблицы
             dataGridViewAthletes.BackgroundColor = Color.AliceBlue;
             dataGridViewAthletes.DefaultCellStyle.BackColor = Color.White;
             dataGridViewAthletes.DefaultCellStyle.ForeColor = Color.Black;
             dataGridViewAthletes.EnableHeadersVisualStyles = false;
             dataGridViewAthletes.ColumnHeadersDefaultCellStyle.BackColor = Color.LightSteelBlue;
             dataGridViewAthletes.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
+            dataGridViewAthletes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewAthletes.ReadOnly = true;
+
+            // Стилизация кнопок
+            StyleButton(buttonAdd);
+            StyleButton(buttonRemove);
+            StyleButton(buttonBack);
+
+            buttonAdd.Click += buttonAddAthlete_Click;
+            buttonRemove.Click += buttonRemoveAthlete_Click;
+            buttonBack.Click += ButtonBack_Click;
+
+            buttonAdd.Paint += RoundPaint;
+            buttonRemove.Paint += RoundPaint;
+            buttonBack.Paint += RoundPaint;
 
             UpdateAthletes();
         }
@@ -66,15 +80,17 @@ namespace TrainingSection
 
         private void RoundPaint(object sender, PaintEventArgs e)
         {
-            Button btn = sender as Button;
-            int radius = 15;
-            GraphicsPath path = new GraphicsPath();
-            path.AddArc(0, 0, radius, radius, 180, 90);
-            path.AddArc(btn.Width - radius, 0, radius, radius, 270, 90);
-            path.AddArc(btn.Width - radius, btn.Height - radius, radius, radius, 0, 90);
-            path.AddArc(0, btn.Height - radius, radius, radius, 90, 90);
-            path.CloseAllFigures();
-            btn.Region = new Region(path);
+            if (sender is Button btn)
+            {
+                int radius = 15;
+                GraphicsPath path = new GraphicsPath();
+                path.AddArc(0, 0, radius, radius, 180, 90);
+                path.AddArc(btn.Width - radius, 0, radius, radius, 270, 90);
+                path.AddArc(btn.Width - radius, btn.Height - radius, radius, radius, 0, 90);
+                path.AddArc(0, btn.Height - radius, radius, radius, 90, 90);
+                path.CloseAllFigures();
+                btn.Region = new Region(path);
+            }
         }
 
         private void buttonAddAthlete_Click(object sender, EventArgs e)
@@ -103,7 +119,7 @@ namespace TrainingSection
             if (group != null && dataGridViewAthletes.CurrentRow != null)
             {
                 string fullName = dataGridViewAthletes.CurrentRow.Cells[0].Value?.ToString();
-                var athlete = group.Athletes.SingleOrDefault(a => a.FullName == fullName);
+                var athlete = group.Athletes.FirstOrDefault(a => a.FullName == fullName);
                 if (athlete != null)
                 {
                     group.RemoveAthlete(athlete);
@@ -126,14 +142,11 @@ namespace TrainingSection
 
             var filtered = group.Athletes.AsEnumerable();
 
-            if (comboBoxGenderFilter.SelectedItem != null)
-            {
-                string gender = comboBoxGenderFilter.SelectedItem.ToString();
-                if (gender == "Мужчины")
-                    filtered = filtered.Where(a => a.Gender == Gender.Male);
-                else if (gender == "Женщины")
-                    filtered = filtered.Where(a => a.Gender == Gender.Female);
-            }
+            string gender = comboBoxGenderFilter.SelectedItem?.ToString();
+            if (gender == "Мужчины")
+                filtered = filtered.Where(a => a.Gender == Gender.Male);
+            else if (gender == "Женщины")
+                filtered = filtered.Where(a => a.Gender == Gender.Female);
 
             int min = (int)numericUpDownMinAge.Value;
             int max = (int)numericUpDownMaxAge.Value;
@@ -152,6 +165,12 @@ namespace TrainingSection
         {
             string file = group.Name + ".json";
             Program.Serializer.Serialize(file, group);
+        }
+
+        private void ButtonBack_Click(object sender, EventArgs e)
+        {
+            this.Owner?.Show();
+            this.Close();
         }
     }
 }
