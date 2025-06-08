@@ -27,6 +27,7 @@
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Groups));
             comboBoxGroups = new ComboBox();
             comboBoxAthletes = new ComboBox();
             buttonAdd = new Button();
@@ -162,6 +163,7 @@
             Controls.Add(numericUpDownMaxAge);
             Controls.Add(dataGridViewAthletes);
             Controls.Add(buttonBack);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Groups";
             Text = "Управление группами";
             ((System.ComponentModel.ISupportInitialize)numericUpDownMinAge).EndInit();

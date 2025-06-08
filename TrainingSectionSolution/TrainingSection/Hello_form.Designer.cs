@@ -17,86 +17,102 @@
 
         private void InitializeComponent()
         {
-            this.panelHeader = new System.Windows.Forms.Panel();
-            this.labelTitle = new System.Windows.Forms.Label();
-            this.buttonOpenGroupEditor = new System.Windows.Forms.Button();
-            this.buttonOpenTrainerInfo = new System.Windows.Forms.Button();
-            this.buttonOpenTrainerRatings = new System.Windows.Forms.Button();
-            this.buttonOpenFilters = new System.Windows.Forms.Button();
-            this.Font = new Font("Segoe UI", 10, FontStyle.Bold);
-            this.panelHeader.SuspendLayout();
-            this.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Hello_form));
+            panelHeader = new Panel();
+            labelTitle = new Label();
+            buttonOpenGroupEditor = new Button();
+            buttonOpenTrainerInfo = new Button();
+            buttonOpenTrainerRatings = new Button();
+            buttonOpenFilters = new Button();
+            panelHeader.SuspendLayout();
+            SuspendLayout();
             // 
             // panelHeader
             // 
-            this.panelHeader.BackColor = System.Drawing.Color.MidnightBlue;
-            this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelHeader.Height = 80;
-            this.panelHeader.Controls.Add(this.labelTitle);
+            panelHeader.BackColor = Color.MidnightBlue;
+            panelHeader.Controls.Add(labelTitle);
+            panelHeader.Dock = DockStyle.Top;
+            panelHeader.Location = new Point(0, 0);
+            panelHeader.Margin = new Padding(4, 3, 4, 3);
+            panelHeader.Name = "panelHeader";
+            panelHeader.Size = new Size(750, 92);
+            panelHeader.TabIndex = 0;
             // 
             // labelTitle
             // 
-            this.labelTitle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelTitle.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelTitle.ForeColor = System.Drawing.Color.White;
-            this.labelTitle.Text = "Training Section";
-            this.labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            labelTitle.Dock = DockStyle.Fill;
+            labelTitle.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
+            labelTitle.ForeColor = Color.White;
+            labelTitle.Location = new Point(0, 0);
+            labelTitle.Margin = new Padding(4, 0, 4, 0);
+            labelTitle.Name = "labelTitle";
+            labelTitle.Size = new Size(750, 92);
+            labelTitle.TabIndex = 0;
+            labelTitle.Text = "Training Section";
+            labelTitle.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // buttonOpenGroupEditor
             // 
-            this.buttonOpenGroupEditor.Location = new System.Drawing.Point(175, 100);
-            this.buttonOpenGroupEditor.Name = "buttonOpenGroupEditor";
-            this.buttonOpenGroupEditor.Size = new System.Drawing.Size(250, 40);
-            this.buttonOpenGroupEditor.TabIndex = 0;
-            this.buttonOpenGroupEditor.Text = "Группы";
-            this.buttonOpenGroupEditor.UseVisualStyleBackColor = true;
-            this.buttonOpenGroupEditor.Click += new System.EventHandler(this.buttonOpenGroupEditor_Click);
+            buttonOpenGroupEditor.Location = new Point(219, 115);
+            buttonOpenGroupEditor.Margin = new Padding(4, 3, 4, 3);
+            buttonOpenGroupEditor.Name = "buttonOpenGroupEditor";
+            buttonOpenGroupEditor.Size = new Size(312, 46);
+            buttonOpenGroupEditor.TabIndex = 0;
+            buttonOpenGroupEditor.Text = "Группы";
+            buttonOpenGroupEditor.UseVisualStyleBackColor = true;
+            buttonOpenGroupEditor.Click += buttonOpenGroupEditor_Click;
             // 
             // buttonOpenTrainerInfo
             // 
-            this.buttonOpenTrainerInfo.Location = new System.Drawing.Point(175, 160);
-            this.buttonOpenTrainerInfo.Name = "buttonOpenTrainerInfo";
-            this.buttonOpenTrainerInfo.Size = new System.Drawing.Size(250, 40);
-            this.buttonOpenTrainerInfo.TabIndex = 1;
-            this.buttonOpenTrainerInfo.Text = "Тренеры";
-            this.buttonOpenTrainerInfo.UseVisualStyleBackColor = true;
-            this.buttonOpenTrainerInfo.Click += new System.EventHandler(this.buttonOpenTrainerInfo_Click);
+            buttonOpenTrainerInfo.Location = new Point(219, 184);
+            buttonOpenTrainerInfo.Margin = new Padding(4, 3, 4, 3);
+            buttonOpenTrainerInfo.Name = "buttonOpenTrainerInfo";
+            buttonOpenTrainerInfo.Size = new Size(312, 46);
+            buttonOpenTrainerInfo.TabIndex = 1;
+            buttonOpenTrainerInfo.Text = "Тренеры";
+            buttonOpenTrainerInfo.UseVisualStyleBackColor = true;
+            buttonOpenTrainerInfo.Click += buttonOpenTrainerInfo_Click;
             // 
             // buttonOpenTrainerRatings
             // 
-            this.buttonOpenTrainerRatings.Location = new System.Drawing.Point(175, 220);
-            this.buttonOpenTrainerRatings.Name = "buttonOpenTrainerRatings";
-            this.buttonOpenTrainerRatings.Size = new System.Drawing.Size(250, 40);
-            this.buttonOpenTrainerRatings.TabIndex = 2;
-            this.buttonOpenTrainerRatings.Text = "Рейтинги тренеров";
-            this.buttonOpenTrainerRatings.UseVisualStyleBackColor = true;
-            this.buttonOpenTrainerRatings.Click += new System.EventHandler(this.buttonOpenTrainerRatings_Click);
+            buttonOpenTrainerRatings.Location = new Point(219, 253);
+            buttonOpenTrainerRatings.Margin = new Padding(4, 3, 4, 3);
+            buttonOpenTrainerRatings.Name = "buttonOpenTrainerRatings";
+            buttonOpenTrainerRatings.Size = new Size(312, 46);
+            buttonOpenTrainerRatings.TabIndex = 2;
+            buttonOpenTrainerRatings.Text = "Рейтинги тренеров";
+            buttonOpenTrainerRatings.UseVisualStyleBackColor = true;
+            buttonOpenTrainerRatings.Click += buttonOpenTrainerRatings_Click;
             // 
-            // buttonOpenExport
+            // buttonOpenFilters
             // 
-            this.buttonOpenFilters.Location = new System.Drawing.Point(175, 280);
-            this.buttonOpenFilters.Name = "buttonOpenFilters";
-            this.buttonOpenFilters.Size = new System.Drawing.Size(250, 40);
-            this.buttonOpenFilters.TabIndex = 3;
-            this.buttonOpenFilters.Text = "Отчет по тренерам";
-            this.buttonOpenFilters.UseVisualStyleBackColor = true;
-            this.buttonOpenFilters.Click += new System.EventHandler(this.buttonOpenExport_Click);
+            buttonOpenFilters.Location = new Point(219, 322);
+            buttonOpenFilters.Margin = new Padding(4, 3, 4, 3);
+            buttonOpenFilters.Name = "buttonOpenFilters";
+            buttonOpenFilters.Size = new Size(312, 46);
+            buttonOpenFilters.TabIndex = 3;
+            buttonOpenFilters.Text = "Отчет по тренерам";
+            buttonOpenFilters.UseVisualStyleBackColor = true;
+            buttonOpenFilters.Click += buttonOpenExport_Click;
             // 
             // Hello_form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 400);
-            this.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.Controls.Add(this.panelHeader);
-            this.Controls.Add(this.buttonOpenGroupEditor);
-            this.Controls.Add(this.buttonOpenTrainerInfo);
-            this.Controls.Add(this.buttonOpenTrainerRatings);
-            this.Controls.Add(this.buttonOpenFilters);
-            this.Name = "Hello_form";
-            this.Text = "TrainingSection";
-            this.panelHeader.ResumeLayout(false);
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new SizeF(10F, 23F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.LightSkyBlue;
+            ClientSize = new Size(750, 460);
+            Controls.Add(panelHeader);
+            Controls.Add(buttonOpenGroupEditor);
+            Controls.Add(buttonOpenTrainerInfo);
+            Controls.Add(buttonOpenTrainerRatings);
+            Controls.Add(buttonOpenFilters);
+            Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(4, 3, 4, 3);
+            Name = "Hello_form";
+            Text = "TrainingSection";
+            panelHeader.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion

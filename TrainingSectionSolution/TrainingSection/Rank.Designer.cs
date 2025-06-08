@@ -24,6 +24,7 @@ namespace TrainingSection
         private void InitializeComponent()
         {
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Rank));
             comboBoxAthletes = new ComboBox();
             comboBoxGroups = new ComboBox();
             numericUpDownRating = new NumericUpDown();
@@ -108,6 +109,7 @@ namespace TrainingSection
             Controls.Add(buttonFeedback);
             Controls.Add(buttonBack);
             Controls.Add(dataGridViewTrainers);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Rank";
             Text = "Рейтинги тренеров";
             ((System.ComponentModel.ISupportInitialize)numericUpDownRating).EndInit();

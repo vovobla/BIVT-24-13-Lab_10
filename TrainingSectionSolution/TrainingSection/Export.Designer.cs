@@ -20,61 +20,59 @@ namespace TrainingSection
 
         private void InitializeComponent()
         {
-            this.comboBoxFormat = new ComboBox();
-            this.buttonExport = new Button();
-            this.buttonBack = new Button();
-            this.labelFormat = new Label();
-
-            this.SuspendLayout();
-
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Export));
+            comboBoxFormat = new ComboBox();
+            buttonExport = new Button();
+            buttonBack = new Button();
+            labelFormat = new Label();
+            SuspendLayout();
             // 
             // comboBoxFormat
             // 
-            this.comboBoxFormat.DropDownStyle = ComboBoxStyle.DropDownList;
-            this.comboBoxFormat.Location = new Point(220, 60);
-            this.comboBoxFormat.Name = "comboBoxFormat";
-            this.comboBoxFormat.Size = new Size(200, 28);
-            this.comboBoxFormat.TabIndex = 0;
-
-            // 
-            // labelFormat
-            // 
-            this.labelFormat.Text = "Выберите формат:";
-            this.labelFormat.Location = new Point(70, 60);
-            this.labelFormat.Size = new Size(150, 28);
-            this.labelFormat.Font = new Font("Segoe UI", 10, FontStyle.Regular);
-
+            comboBoxFormat.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxFormat.Location = new Point(220, 60);
+            comboBoxFormat.Name = "comboBoxFormat";
+            comboBoxFormat.Size = new Size(200, 28);
+            comboBoxFormat.TabIndex = 0;
             // 
             // buttonExport
             // 
-            this.buttonExport.Text = "Сохранить отчёт";
-            this.buttonExport.Location = new Point(180, 120);
-            this.buttonExport.Size = new Size(180, 40);
-            this.buttonExport.Name = "buttonExport";
-            this.buttonExport.TabIndex = 1;
-
+            buttonExport.Location = new Point(180, 120);
+            buttonExport.Name = "buttonExport";
+            buttonExport.Size = new Size(180, 40);
+            buttonExport.TabIndex = 1;
+            buttonExport.Text = "Сохранить отчёт";
             // 
             // buttonBack
             // 
-            this.buttonBack.Text = "Назад";
-            this.buttonBack.Location = new Point(400, 220);
-            this.buttonBack.Size = new Size(100, 35);
-            this.buttonBack.Name = "buttonBack";
-            this.buttonBack.TabIndex = 2;
-
+            buttonBack.Location = new Point(400, 220);
+            buttonBack.Name = "buttonBack";
+            buttonBack.Size = new Size(100, 35);
+            buttonBack.TabIndex = 2;
+            buttonBack.Text = "Назад";
+            // 
+            // labelFormat
+            // 
+            labelFormat.Font = new Font("Segoe UI", 10F);
+            labelFormat.Location = new Point(70, 60);
+            labelFormat.Name = "labelFormat";
+            labelFormat.Size = new Size(150, 28);
+            labelFormat.TabIndex = 0;
+            labelFormat.Text = "Выберите формат:";
             // 
             // Export
             // 
-            this.AutoScaleDimensions = new SizeF(8F, 20F);
-            this.AutoScaleMode = AutoScaleMode.Font;
-            this.ClientSize = new Size(540, 280);
-            this.Controls.Add(this.labelFormat);
-            this.Controls.Add(this.comboBoxFormat);
-            this.Controls.Add(this.buttonExport);
-            this.Controls.Add(this.buttonBack);
-            this.Name = "Export";
-            this.Text = "Экспорт отчёта";
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(540, 280);
+            Controls.Add(labelFormat);
+            Controls.Add(comboBoxFormat);
+            Controls.Add(buttonExport);
+            Controls.Add(buttonBack);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Name = "Export";
+            Text = "Экспорт отчёта";
+            ResumeLayout(false);
         }
     }
 }

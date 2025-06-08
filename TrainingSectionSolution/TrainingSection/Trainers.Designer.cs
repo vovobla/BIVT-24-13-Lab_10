@@ -22,6 +22,7 @@ namespace TrainingSection
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Trainers));
             comboBoxTrainerStats = new ComboBox();
             dataGridViewTrainerStats = new DataGridView();
             buttonBack = new Button();
@@ -67,6 +68,7 @@ namespace TrainingSection
             Controls.Add(comboBoxTrainerStats);
             Controls.Add(dataGridViewTrainerStats);
             Controls.Add(buttonBack);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Trainers";
             Text = "Статистика тренеров";
             ((System.ComponentModel.ISupportInitialize)dataGridViewTrainerStats).EndInit();
