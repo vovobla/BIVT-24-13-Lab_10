@@ -23,6 +23,7 @@
             this.buttonOpenTrainerInfo = new System.Windows.Forms.Button();
             this.buttonOpenTrainerRatings = new System.Windows.Forms.Button();
             this.buttonOpenFilters = new System.Windows.Forms.Button();
+            this.Font = new Font("Segoe UI", 10, FontStyle.Bold);
             this.panelHeader.SuspendLayout();
             this.SuspendLayout();
             // 

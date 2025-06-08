@@ -91,8 +91,8 @@ namespace TrainingSection
                 {
                     group.AddAthlete(athlete);
                     SaveGroup(group);
-                    MessageBox.Show($"Спортсмен {athlete.FullName} добавлен в группу.", "Успешно", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     UpdateAthletes();
+                    MessageBox.Show($"Спортсмен {athlete.FullName} добавлен в группу.", "Успешно", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
         }
@@ -108,8 +108,8 @@ namespace TrainingSection
                 {
                     group.RemoveAthlete(athlete);
                     SaveGroup(group);
-                    MessageBox.Show($"Спортсмен {athlete.FullName} удалён из группы.", "Удалено", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     UpdateAthletes();
+                    MessageBox.Show($"Спортсмен {athlete.FullName} удалён из группы.", "Удалено", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
         }

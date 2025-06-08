@@ -75,21 +75,21 @@
             // 
             // comboBoxGenderFilter
             // 
-            comboBoxGenderFilter.Location = new Point(30, 70);
+            comboBoxGenderFilter.Location = new Point(30, 73);
             comboBoxGenderFilter.Name = "comboBoxGenderFilter";
             comboBoxGenderFilter.Size = new Size(150, 28);
             comboBoxGenderFilter.TabIndex = 4;
             // 
             // numericUpDownMinAge
             // 
-            numericUpDownMinAge.Location = new Point(315, 72);
+            numericUpDownMinAge.Location = new Point(315, 75);
             numericUpDownMinAge.Name = "numericUpDownMinAge";
             numericUpDownMinAge.Size = new Size(60, 27);
             numericUpDownMinAge.TabIndex = 7;
             // 
             // numericUpDownMaxAge
             // 
-            numericUpDownMaxAge.Location = new Point(417, 72);
+            numericUpDownMaxAge.Location = new Point(417, 75);
             numericUpDownMaxAge.Name = "numericUpDownMaxAge";
             numericUpDownMaxAge.Size = new Size(60, 27);
             numericUpDownMaxAge.TabIndex = 9;
