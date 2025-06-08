@@ -26,35 +26,37 @@ namespace TrainingSection
             comboBoxAthletes.SelectedIndexChanged += ComboBoxAthletes_SelectedIndexChanged;
 
             comboBoxGroups.Enabled = false;
+            comboBoxGroups.DisplayMember = "Name";
             comboBoxGroups.SelectedIndexChanged += ComboBoxGroups_SelectedIndexChanged;
 
             numericUpDownRating.Minimum = 1;
             numericUpDownRating.Maximum = 5;
             numericUpDownRating.Value = 5;
 
-            buttonFeedback.Enabled = false;
-            buttonFeedback.Click += ButtonFeedback_Click;
+            // Стилизация кнопок
             StyleButton(buttonFeedback);
             buttonFeedback.Paint += RoundPaint;
+            buttonFeedback.Enabled = false;
+            buttonFeedback.Click += ButtonFeedback_Click;
 
             StyleButton(buttonBack);
-            buttonBack.Click += (s, e) => { this.Owner?.Show(); this.Close(); };
             buttonBack.Paint += RoundPaint;
+            buttonBack.Click += (s, e) =>
+            {
+                this.Owner?.Show();
+                this.Close();
+            };
 
             UpdateTrainerRatings();
         }
 
         private void ComboBoxAthletes_SelectedIndexChanged(object sender, EventArgs e)
         {
-            comboBoxGroups.DataSource = null;
-            comboBoxGroups.Items.Clear();
-
             var athlete = comboBoxAthletes.SelectedItem as Athlete;
             if (athlete != null)
             {
-                comboBoxGroups.Enabled = true;
                 comboBoxGroups.DataSource = Program.Groups;
-                comboBoxGroups.DisplayMember = "Name";
+                comboBoxGroups.Enabled = true;
             }
             else
             {
@@ -65,7 +67,7 @@ namespace TrainingSection
 
         private void ComboBoxGroups_SelectedIndexChanged(object sender, EventArgs e)
         {
-            buttonFeedback.Enabled = comboBoxGroups.SelectedItem is Group;
+            buttonFeedback.Enabled = comboBoxGroups.SelectedItem is Group && comboBoxAthletes.SelectedItem is Athlete;
         }
 
         private void ButtonFeedback_Click(object sender, EventArgs e)
@@ -79,8 +81,9 @@ namespace TrainingSection
                 if (group.CanLeaveFeedback(athlete))
                 {
                     group.LeaveFeedback(athlete, rating);
+                    SaveGroup(group);
+                    UpdateTrainerRatings(); // обновление ДО сообщения
                     MessageBox.Show("Отзыв успешно сохранён!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    UpdateTrainerRatings();
                 }
                 else
                 {
@@ -98,6 +101,12 @@ namespace TrainingSection
                 Рейтинг = t.Rating,
                 Групп = t.Groups.Count
             }).ToList();
+        }
+
+        private void SaveGroup(Group group)
+        {
+            string file = group.Name + ".json";
+            Program.Serializer.Serialize(file, group);
         }
 
         private void StyleButton(Button button)

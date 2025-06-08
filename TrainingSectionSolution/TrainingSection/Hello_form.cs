@@ -74,9 +74,9 @@ namespace TrainingSection
             this.Hide();
         }
 
-        private void buttonOpenFilters_Click(object sender, EventArgs e)
+        private void buttonOpenExport_Click(object sender, EventArgs e)
         {
-            var form = new Filters();
+            var form = new Export();
             form.FormClosed += (s, args) => this.Show();
             form.Show();
             this.Hide();

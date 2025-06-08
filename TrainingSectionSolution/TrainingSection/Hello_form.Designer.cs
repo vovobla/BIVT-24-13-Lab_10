@@ -72,7 +72,7 @@
             this.buttonOpenTrainerRatings.UseVisualStyleBackColor = true;
             this.buttonOpenTrainerRatings.Click += new System.EventHandler(this.buttonOpenTrainerRatings_Click);
             // 
-            // buttonOpenFilters
+            // buttonOpenExport
             // 
             this.buttonOpenFilters.Location = new System.Drawing.Point(175, 280);
             this.buttonOpenFilters.Name = "buttonOpenFilters";
@@ -80,7 +80,7 @@
             this.buttonOpenFilters.TabIndex = 3;
             this.buttonOpenFilters.Text = "Отчет по тренерам";
             this.buttonOpenFilters.UseVisualStyleBackColor = true;
-            this.buttonOpenFilters.Click += new System.EventHandler(this.buttonOpenFilters_Click);
+            this.buttonOpenFilters.Click += new System.EventHandler(this.buttonOpenExport_Click);
             // 
             // Hello_form
             // 
