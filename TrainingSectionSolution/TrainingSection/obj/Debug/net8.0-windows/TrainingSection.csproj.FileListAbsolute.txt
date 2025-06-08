@@ -44,3 +44,53 @@ C:\Users\user\Downloads\TrainingSectionSolution\TrainingSectionSolution\Training
 C:\Users\user\Downloads\TrainingSectionSolution\TrainingSectionSolution\TrainingSection\obj\Debug\net8.0-windows\TrainingSection.Rank.resources
 C:\Users\user\Downloads\TrainingSectionSolution\TrainingSectionSolution\TrainingSection\obj\Debug\net8.0-windows\TrainingSection.Trainers.resources
 C:\Users\user\Downloads\TrainingSectionSolution\TrainingSectionSolution\TrainingSection\obj\Debug\net8.0-windows\TrainingSection.Export.resources
+C:\Users\Danila\Downloads\BIVT-24-13-Lab_10-main (4)\BIVT-24-13-Lab_10-main\TrainingSectionSolution\TrainingSection\bin\Debug\net8.0-windows\TrainingSection.exe
+C:\Users\Danila\Downloads\BIVT-24-13-Lab_10-main (4)\BIVT-24-13-Lab_10-main\TrainingSectionSolution\TrainingSection\bin\Debug\net8.0-windows\TrainingSection.deps.json
+C:\Users\Danila\Downloads\BIVT-24-13-Lab_10-main (4)\BIVT-24-13-Lab_10-main\TrainingSectionSolution\TrainingSection\bin\Debug\net8.0-windows\TrainingSection.runtimeconfig.json
+C:\Users\Danila\Downloads\BIVT-24-13-Lab_10-main (4)\BIVT-24-13-Lab_10-main\TrainingSectionSolution\TrainingSection\bin\Debug\net8.0-windows\TrainingSection.dll
+C:\Users\Danila\Downloads\BIVT-24-13-Lab_10-main (4)\BIVT-24-13-Lab_10-main\TrainingSectionSolution\TrainingSection\bin\Debug\net8.0-windows\TrainingSection.pdb
+C:\Users\Danila\Downloads\BIVT-24-13-Lab_10-main (4)\BIVT-24-13-Lab_10-main\TrainingSectionSolution\TrainingSection\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\Danila\Downloads\BIVT-24-13-Lab_10-main (4)\BIVT-24-13-Lab_10-main\TrainingSectionSolution\TrainingSection\bin\Debug\net8.0-windows\Model.dll
+C:\Users\Danila\Downloads\BIVT-24-13-Lab_10-main (4)\BIVT-24-13-Lab_10-main\TrainingSectionSolution\TrainingSection\bin\Debug\net8.0-windows\Model.pdb
+C:\Users\Danila\Downloads\BIVT-24-13-Lab_10-main (4)\BIVT-24-13-Lab_10-main\TrainingSectionSolution\TrainingSection\obj\Debug\net8.0-windows\TrainingSection.csproj.AssemblyReference.cache
+C:\Users\Danila\Downloads\BIVT-24-13-Lab_10-main (4)\BIVT-24-13-Lab_10-main\TrainingSectionSolution\TrainingSection\obj\Debug\net8.0-windows\TrainingSection.Export.resources
+C:\Users\Danila\Downloads\BIVT-24-13-Lab_10-main (4)\BIVT-24-13-Lab_10-main\TrainingSectionSolution\TrainingSection\obj\Debug\net8.0-windows\TrainingSection.Groups.resources
+C:\Users\Danila\Downloads\BIVT-24-13-Lab_10-main (4)\BIVT-24-13-Lab_10-main\TrainingSectionSolution\TrainingSection\obj\Debug\net8.0-windows\TrainingSection.Hello_form.resources
+C:\Users\Danila\Downloads\BIVT-24-13-Lab_10-main (4)\BIVT-24-13-Lab_10-main\TrainingSectionSolution\TrainingSection\obj\Debug\net8.0-windows\TrainingSection.Rank.resources
+C:\Users\Danila\Downloads\BIVT-24-13-Lab_10-main (4)\BIVT-24-13-Lab_10-main\TrainingSectionSolution\TrainingSection\obj\Debug\net8.0-windows\TrainingSection.Trainers.resources
+C:\Users\Danila\Downloads\BIVT-24-13-Lab_10-main (4)\BIVT-24-13-Lab_10-main\TrainingSectionSolution\TrainingSection\obj\Debug\net8.0-windows\TrainingSection.csproj.GenerateResource.cache
+C:\Users\Danila\Downloads\BIVT-24-13-Lab_10-main (4)\BIVT-24-13-Lab_10-main\TrainingSectionSolution\TrainingSection\obj\Debug\net8.0-windows\TrainingSection.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Danila\Downloads\BIVT-24-13-Lab_10-main (4)\BIVT-24-13-Lab_10-main\TrainingSectionSolution\TrainingSection\obj\Debug\net8.0-windows\TrainingSection.AssemblyInfoInputs.cache
+C:\Users\Danila\Downloads\BIVT-24-13-Lab_10-main (4)\BIVT-24-13-Lab_10-main\TrainingSectionSolution\TrainingSection\obj\Debug\net8.0-windows\TrainingSection.AssemblyInfo.cs
+C:\Users\Danila\Downloads\BIVT-24-13-Lab_10-main (4)\BIVT-24-13-Lab_10-main\TrainingSectionSolution\TrainingSection\obj\Debug\net8.0-windows\TrainingSection.csproj.CoreCompileInputs.cache
+C:\Users\Danila\Downloads\BIVT-24-13-Lab_10-main (4)\BIVT-24-13-Lab_10-main\TrainingSectionSolution\TrainingSection\obj\Debug\net8.0-windows\Training.3BBA0348.Up2Date
+C:\Users\Danila\Downloads\BIVT-24-13-Lab_10-main (4)\BIVT-24-13-Lab_10-main\TrainingSectionSolution\TrainingSection\obj\Debug\net8.0-windows\TrainingSection.dll
+C:\Users\Danila\Downloads\BIVT-24-13-Lab_10-main (4)\BIVT-24-13-Lab_10-main\TrainingSectionSolution\TrainingSection\obj\Debug\net8.0-windows\refint\TrainingSection.dll
+C:\Users\Danila\Downloads\BIVT-24-13-Lab_10-main (4)\BIVT-24-13-Lab_10-main\TrainingSectionSolution\TrainingSection\obj\Debug\net8.0-windows\TrainingSection.pdb
+C:\Users\Danila\Downloads\BIVT-24-13-Lab_10-main (4)\BIVT-24-13-Lab_10-main\TrainingSectionSolution\TrainingSection\obj\Debug\net8.0-windows\TrainingSection.genruntimeconfig.cache
+C:\Users\Danila\Downloads\BIVT-24-13-Lab_10-main (4)\BIVT-24-13-Lab_10-main\TrainingSectionSolution\TrainingSection\obj\Debug\net8.0-windows\ref\TrainingSection.dll
+C:\Users\user\Desktop\TrainingSectionSolution\TrainingSection\bin\Debug\net8.0-windows\TrainingSection.exe
+C:\Users\user\Desktop\TrainingSectionSolution\TrainingSection\bin\Debug\net8.0-windows\TrainingSection.deps.json
+C:\Users\user\Desktop\TrainingSectionSolution\TrainingSection\bin\Debug\net8.0-windows\TrainingSection.runtimeconfig.json
+C:\Users\user\Desktop\TrainingSectionSolution\TrainingSection\bin\Debug\net8.0-windows\TrainingSection.dll
+C:\Users\user\Desktop\TrainingSectionSolution\TrainingSection\bin\Debug\net8.0-windows\TrainingSection.pdb
+C:\Users\user\Desktop\TrainingSectionSolution\TrainingSection\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\user\Desktop\TrainingSectionSolution\TrainingSection\bin\Debug\net8.0-windows\Model.dll
+C:\Users\user\Desktop\TrainingSectionSolution\TrainingSection\bin\Debug\net8.0-windows\Model.pdb
+C:\Users\user\Desktop\TrainingSectionSolution\TrainingSection\obj\Debug\net8.0-windows\TrainingSection.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\TrainingSectionSolution\TrainingSection\obj\Debug\net8.0-windows\TrainingSection.Export.resources
+C:\Users\user\Desktop\TrainingSectionSolution\TrainingSection\obj\Debug\net8.0-windows\TrainingSection.Groups.resources
+C:\Users\user\Desktop\TrainingSectionSolution\TrainingSection\obj\Debug\net8.0-windows\TrainingSection.Hello_form.resources
+C:\Users\user\Desktop\TrainingSectionSolution\TrainingSection\obj\Debug\net8.0-windows\TrainingSection.Rank.resources
+C:\Users\user\Desktop\TrainingSectionSolution\TrainingSection\obj\Debug\net8.0-windows\TrainingSection.Trainers.resources
+C:\Users\user\Desktop\TrainingSectionSolution\TrainingSection\obj\Debug\net8.0-windows\TrainingSection.csproj.GenerateResource.cache
+C:\Users\user\Desktop\TrainingSectionSolution\TrainingSection\obj\Debug\net8.0-windows\TrainingSection.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\TrainingSectionSolution\TrainingSection\obj\Debug\net8.0-windows\TrainingSection.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\TrainingSectionSolution\TrainingSection\obj\Debug\net8.0-windows\TrainingSection.AssemblyInfo.cs
+C:\Users\user\Desktop\TrainingSectionSolution\TrainingSection\obj\Debug\net8.0-windows\TrainingSection.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\TrainingSectionSolution\TrainingSection\obj\Debug\net8.0-windows\Training.3BBA0348.Up2Date
+C:\Users\user\Desktop\TrainingSectionSolution\TrainingSection\obj\Debug\net8.0-windows\TrainingSection.dll
+C:\Users\user\Desktop\TrainingSectionSolution\TrainingSection\obj\Debug\net8.0-windows\refint\TrainingSection.dll
+C:\Users\user\Desktop\TrainingSectionSolution\TrainingSection\obj\Debug\net8.0-windows\TrainingSection.pdb
+C:\Users\user\Desktop\TrainingSectionSolution\TrainingSection\obj\Debug\net8.0-windows\TrainingSection.genruntimeconfig.cache
+C:\Users\user\Desktop\TrainingSectionSolution\TrainingSection\obj\Debug\net8.0-windows\ref\TrainingSection.dll

@@ -14,7 +14,7 @@ namespace Model.Data
         {
             var settings = new JsonSerializerSettings
             {
-                ReferenceLoopHandling = ReferenceLoopHandling.Ignore // <--- добавь эту строку!
+                ReferenceLoopHandling = ReferenceLoopHandling.Ignore 
             };
             File.WriteAllText(filename, JsonConvert.SerializeObject(obj, Formatting.Indented, settings));
         }

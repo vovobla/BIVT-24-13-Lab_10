@@ -22,3 +22,27 @@ C:\Users\user\Downloads\TrainingSectionSolution\TrainingSectionSolution\Model\ob
 C:\Users\user\Downloads\TrainingSectionSolution\TrainingSectionSolution\Model\obj\Debug\net8.0-windows\refint\Model.dll
 C:\Users\user\Downloads\TrainingSectionSolution\TrainingSectionSolution\Model\obj\Debug\net8.0-windows\Model.pdb
 C:\Users\user\Downloads\TrainingSectionSolution\TrainingSectionSolution\Model\obj\Debug\net8.0-windows\ref\Model.dll
+C:\Users\Danila\Downloads\BIVT-24-13-Lab_10-main (4)\BIVT-24-13-Lab_10-main\TrainingSectionSolution\Model\bin\Debug\net8.0-windows\Model.deps.json
+C:\Users\Danila\Downloads\BIVT-24-13-Lab_10-main (4)\BIVT-24-13-Lab_10-main\TrainingSectionSolution\Model\bin\Debug\net8.0-windows\Model.dll
+C:\Users\Danila\Downloads\BIVT-24-13-Lab_10-main (4)\BIVT-24-13-Lab_10-main\TrainingSectionSolution\Model\bin\Debug\net8.0-windows\Model.pdb
+C:\Users\Danila\Downloads\BIVT-24-13-Lab_10-main (4)\BIVT-24-13-Lab_10-main\TrainingSectionSolution\Model\obj\Debug\net8.0-windows\Model.csproj.AssemblyReference.cache
+C:\Users\Danila\Downloads\BIVT-24-13-Lab_10-main (4)\BIVT-24-13-Lab_10-main\TrainingSectionSolution\Model\obj\Debug\net8.0-windows\Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Danila\Downloads\BIVT-24-13-Lab_10-main (4)\BIVT-24-13-Lab_10-main\TrainingSectionSolution\Model\obj\Debug\net8.0-windows\Model.AssemblyInfoInputs.cache
+C:\Users\Danila\Downloads\BIVT-24-13-Lab_10-main (4)\BIVT-24-13-Lab_10-main\TrainingSectionSolution\Model\obj\Debug\net8.0-windows\Model.AssemblyInfo.cs
+C:\Users\Danila\Downloads\BIVT-24-13-Lab_10-main (4)\BIVT-24-13-Lab_10-main\TrainingSectionSolution\Model\obj\Debug\net8.0-windows\Model.csproj.CoreCompileInputs.cache
+C:\Users\Danila\Downloads\BIVT-24-13-Lab_10-main (4)\BIVT-24-13-Lab_10-main\TrainingSectionSolution\Model\obj\Debug\net8.0-windows\Model.dll
+C:\Users\Danila\Downloads\BIVT-24-13-Lab_10-main (4)\BIVT-24-13-Lab_10-main\TrainingSectionSolution\Model\obj\Debug\net8.0-windows\refint\Model.dll
+C:\Users\Danila\Downloads\BIVT-24-13-Lab_10-main (4)\BIVT-24-13-Lab_10-main\TrainingSectionSolution\Model\obj\Debug\net8.0-windows\Model.pdb
+C:\Users\Danila\Downloads\BIVT-24-13-Lab_10-main (4)\BIVT-24-13-Lab_10-main\TrainingSectionSolution\Model\obj\Debug\net8.0-windows\ref\Model.dll
+C:\Users\user\Desktop\TrainingSectionSolution\Model\bin\Debug\net8.0-windows\Model.deps.json
+C:\Users\user\Desktop\TrainingSectionSolution\Model\bin\Debug\net8.0-windows\Model.dll
+C:\Users\user\Desktop\TrainingSectionSolution\Model\bin\Debug\net8.0-windows\Model.pdb
+C:\Users\user\Desktop\TrainingSectionSolution\Model\obj\Debug\net8.0-windows\Model.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\TrainingSectionSolution\Model\obj\Debug\net8.0-windows\Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\TrainingSectionSolution\Model\obj\Debug\net8.0-windows\Model.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\TrainingSectionSolution\Model\obj\Debug\net8.0-windows\Model.AssemblyInfo.cs
+C:\Users\user\Desktop\TrainingSectionSolution\Model\obj\Debug\net8.0-windows\Model.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\TrainingSectionSolution\Model\obj\Debug\net8.0-windows\Model.dll
+C:\Users\user\Desktop\TrainingSectionSolution\Model\obj\Debug\net8.0-windows\refint\Model.dll
+C:\Users\user\Desktop\TrainingSectionSolution\Model\obj\Debug\net8.0-windows\Model.pdb
+C:\Users\user\Desktop\TrainingSectionSolution\Model\obj\Debug\net8.0-windows\ref\Model.dll

@@ -19,7 +19,6 @@ namespace TrainingSection
 
         private void Groups_Load(object sender, EventArgs e)
         {
-            // Заполнение групп и спортсменов
             comboBoxGroups.DataSource = Program.Groups;
             comboBoxGroups.DisplayMember = "Name";
             comboBoxGroups.SelectedIndexChanged += (s, e) => UpdateAthletes();
@@ -29,12 +28,10 @@ namespace TrainingSection
             comboBoxAthletes.SelectedIndex = -1;
             comboBoxAthletes.Text = "Спортсмен";
 
-            // Половой фильтр
             comboBoxGenderFilter.Items.AddRange(new string[] { "Все", "Мужчины", "Женщины" });
             comboBoxGenderFilter.SelectedIndex = 0;
             comboBoxGenderFilter.SelectedIndexChanged += (s, e) => ApplyFilters();
 
-            // Возрастной фильтр
             numericUpDownMinAge.Minimum = 0;
             numericUpDownMinAge.Maximum = 100;
             numericUpDownMaxAge.Minimum = 0;
@@ -43,7 +40,6 @@ namespace TrainingSection
             numericUpDownMinAge.ValueChanged += (s, e) => ApplyFilters();
             numericUpDownMaxAge.ValueChanged += (s, e) => ApplyFilters();
 
-            // Стилизация таблицы
             dataGridViewAthletes.BackgroundColor = Color.AliceBlue;
             dataGridViewAthletes.DefaultCellStyle.BackColor = Color.White;
             dataGridViewAthletes.DefaultCellStyle.ForeColor = Color.Black;
@@ -53,7 +49,6 @@ namespace TrainingSection
             dataGridViewAthletes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewAthletes.ReadOnly = true;
 
-            // Стилизация кнопок
             StyleButton(buttonAdd);
             StyleButton(buttonRemove);
             StyleButton(buttonBack);

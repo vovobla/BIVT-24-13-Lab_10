@@ -1,13 +1,13 @@
 {
   "Name": "Группа 1",
   "Trainer": {
-    "Rating": 5.0,
+    "Rating": 3.0,
     "Groups": [
       {
         "Name": "Группа 2",
         "Athletes": [
           {
-            "FullName": "Попов Алексей",
+            "FullName": "Волков Владимир",
             "Age": 19,
             "Gender": 0
           }
@@ -26,9 +26,9 @@
       "Gender": 0
     },
     {
-      "FullName": "Кузнецова Анна",
-      "Age": 21,
-      "Gender": 1
+      "FullName": "Волков Владимир",
+      "Age": 19,
+      "Gender": 0
     }
   ],
   "SessionCount": 0

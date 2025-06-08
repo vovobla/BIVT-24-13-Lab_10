@@ -23,7 +23,7 @@ namespace TrainingSection
             ApplyRoundedStyle(buttonOpenTrainerRatings);
             ApplyRoundedStyle(buttonOpenFilters);
 
-            this.BackColor = Color.LightSkyBlue; // светло-голубой фон
+            this.BackColor = Color.LightSkyBlue; 
             
         }
         private void ApplyRoundedStyle(Button button)

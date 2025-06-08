@@ -19,6 +19,9 @@ namespace TrainingSection
 
         private void Rank_Load(object sender, EventArgs e)
         {
+            dataGridViewTrainers.BackgroundColor = Color.AliceBlue;
+            dataGridViewTrainers.ColumnHeadersDefaultCellStyle.BackColor = Color.LightSteelBlue;
+            dataGridViewTrainers.EnableHeadersVisualStyles = false;
             comboBoxAthletes.DataSource = Program.AllAthletes.ToList();
             comboBoxAthletes.DisplayMember = "FullName";
             comboBoxAthletes.SelectedIndex = -1;
@@ -33,7 +36,6 @@ namespace TrainingSection
             numericUpDownRating.Maximum = 5;
             numericUpDownRating.Value = 5;
 
-            // Стилизация кнопок
             StyleButton(buttonFeedback);
             buttonFeedback.Paint += RoundPaint;
             buttonFeedback.Enabled = false;
@@ -55,7 +57,6 @@ namespace TrainingSection
             var athlete = comboBoxAthletes.SelectedItem as Athlete;
             if (athlete != null)
             {
-                // Только те группы, в которых участвует спортсмен
                 var relevantGroups = Program.Groups
                     .Where(g => g.Athletes.Contains(athlete))
                     .ToList();
@@ -92,7 +93,7 @@ namespace TrainingSection
                 {
                     group.LeaveFeedback(athlete, rating);
                     SaveGroup(group);
-                    UpdateTrainerRatings(); // обновление ДО сообщения
+                    UpdateTrainerRatings(); 
                     MessageBox.Show("Отзыв успешно сохранён!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else

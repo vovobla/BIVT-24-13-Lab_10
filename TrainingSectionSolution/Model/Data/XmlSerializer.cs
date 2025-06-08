@@ -23,7 +23,6 @@ namespace Model.Data
             return (T)serializer.Deserialize(fs);
         }
 
-        // --- Дополнительно: конвертация Trainer → TrainerDTO ---
         public static List<TrainerDTO> ConvertToDTO(List<Trainer> trainers)
         {
             var list = new List<TrainerDTO>();
@@ -49,7 +48,6 @@ namespace Model.Data
         }
     }
 
-    // --- DTO-классы для сериализации ---
     public class TrainerDTO
     {
         public string FullName { get; set; }
@@ -67,6 +65,6 @@ namespace Model.Data
     {
         public string FullName { get; set; }
         public int Age { get; set; }
-        public string Gender { get; set; } // "Мужской" / "Женский"
+        public string Gender { get; set; } 
     }
 }

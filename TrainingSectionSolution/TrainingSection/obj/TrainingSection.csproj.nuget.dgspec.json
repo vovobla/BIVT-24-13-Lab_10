@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Downloads\\TrainingSectionSolution\\TrainingSectionSolution\\TrainingSection\\TrainingSection.csproj": {}
+    "C:\\Users\\user\\Desktop\\TrainingSectionSolution\\TrainingSection\\TrainingSection.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Downloads\\TrainingSectionSolution\\TrainingSectionSolution\\Model\\Model.csproj": {
+    "C:\\Users\\user\\Desktop\\TrainingSectionSolution\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Downloads\\TrainingSectionSolution\\TrainingSectionSolution\\Model\\Model.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\TrainingSectionSolution\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "C:\\Users\\user\\Downloads\\TrainingSectionSolution\\TrainingSectionSolution\\Model\\Model.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\TrainingSectionSolution\\Model\\Model.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Downloads\\TrainingSectionSolution\\TrainingSectionSolution\\Model\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\TrainingSectionSolution\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -78,14 +78,14 @@
         }
       }
     },
-    "C:\\Users\\user\\Downloads\\TrainingSectionSolution\\TrainingSectionSolution\\TrainingSection\\TrainingSection.csproj": {
+    "C:\\Users\\user\\Desktop\\TrainingSectionSolution\\TrainingSection\\TrainingSection.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Downloads\\TrainingSectionSolution\\TrainingSectionSolution\\TrainingSection\\TrainingSection.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\TrainingSectionSolution\\TrainingSection\\TrainingSection.csproj",
         "projectName": "TrainingSection",
-        "projectPath": "C:\\Users\\user\\Downloads\\TrainingSectionSolution\\TrainingSectionSolution\\TrainingSection\\TrainingSection.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\TrainingSectionSolution\\TrainingSection\\TrainingSection.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Downloads\\TrainingSectionSolution\\TrainingSectionSolution\\TrainingSection\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\TrainingSectionSolution\\TrainingSection\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -107,8 +107,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\user\\Downloads\\TrainingSectionSolution\\TrainingSectionSolution\\Model\\Model.csproj": {
-                "projectPath": "C:\\Users\\user\\Downloads\\TrainingSectionSolution\\TrainingSectionSolution\\Model\\Model.csproj"
+              "C:\\Users\\user\\Desktop\\TrainingSectionSolution\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\TrainingSectionSolution\\Model\\Model.csproj"
               }
             }
           }

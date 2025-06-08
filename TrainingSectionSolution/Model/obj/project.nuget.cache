@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lgpnsoYf3Hg=",
+  "dgSpecHash": "JUOGiTS9C14=",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Downloads\\TrainingSectionSolution\\TrainingSectionSolution\\Model\\Model.csproj",
+  "projectFilePath": "C:\\Users\\user\\Desktop\\TrainingSectionSolution\\Model\\Model.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],

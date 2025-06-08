@@ -61,11 +61,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Downloads\\TrainingSectionSolution\\TrainingSectionSolution\\Model\\Model.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\TrainingSectionSolution\\Model\\Model.csproj",
       "projectName": "Model",
-      "projectPath": "C:\\Users\\user\\Downloads\\TrainingSectionSolution\\TrainingSectionSolution\\Model\\Model.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\TrainingSectionSolution\\Model\\Model.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Downloads\\TrainingSectionSolution\\TrainingSectionSolution\\Model\\obj\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\TrainingSectionSolution\\Model\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

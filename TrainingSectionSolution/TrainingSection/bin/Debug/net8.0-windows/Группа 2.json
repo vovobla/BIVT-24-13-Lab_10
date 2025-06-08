@@ -24,27 +24,6 @@
     "Age": 35,
     "Gender": 0
   },
-  "Athletes": [
-    {
-      "FullName": "Попов Алексей",
-      "Age": 19,
-      "Gender": 0
-    },
-    {
-      "FullName": "Васильев Игорь",
-      "Age": 20,
-      "Gender": 0
-    },
-    {
-      "FullName": "Ковалёва Светлана",
-      "Age": 22,
-      "Gender": 1
-    },
-    {
-      "FullName": "Морозов Данила",
-      "Age": 18,
-      "Gender": 0
-    }
-  ],
+  "Athletes": [],
   "SessionCount": 0
 }

@@ -29,7 +29,13 @@ namespace TrainingSection
             dataGridViewTrainerStats.ColumnHeadersDefaultCellStyle.WrapMode = DataGridViewTriState.True;
             dataGridViewTrainerStats.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 
-            // Стилизация кнопки назад
+            dataGridViewTrainerStats.BackgroundColor = Color.AliceBlue;
+            dataGridViewTrainerStats.DefaultCellStyle.BackColor = Color.White;
+            dataGridViewTrainerStats.DefaultCellStyle.ForeColor = Color.Black;
+            dataGridViewTrainerStats.EnableHeadersVisualStyles = false;
+            dataGridViewTrainerStats.ColumnHeadersDefaultCellStyle.BackColor = Color.LightSteelBlue;
+            dataGridViewTrainerStats.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
+
             buttonBack.FlatStyle = FlatStyle.Flat;
             buttonBack.FlatAppearance.BorderSize = 0;
             buttonBack.BackColor = Color.White;
@@ -38,6 +44,7 @@ namespace TrainingSection
             buttonBack.Click += ButtonBack_Click;
             buttonBack.Paint += RoundPaint;
         }
+
 
         private void RoundPaint(object sender, PaintEventArgs e)
         {
